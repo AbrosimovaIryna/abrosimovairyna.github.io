@@ -40,7 +40,7 @@
                 </li>
             </ul>
         </nav>
-        <div class="header__social social-header">
+        <div class="header__social social-header" style="display: none;">
             <ul class="social-header__list">
                 <li class="social-header__item">
                     <a href="https://t.me/Delilah07" class="social-header__link telegram"  target="_blank" rel="noopener noreferrer"></a>
@@ -61,7 +61,7 @@
                     <div class="section__column">
                         <h1 class="section-intro__title">Hi,<br>I’m Iryna</h1>
                         <h3 class="section-intro__subtitle"><span class="text-animation">front-end</span> developer</h3>
-                        <a href="#contact" class="btn"><span>Contact me</span></a>
+                        <a href="javascript:document.querySelector('[name=contact]').scrollIntoView();" class="btn"><span>Contact me</span></a>
                         <a href="/images/CV_Iryna_Abrosimova.pdf" target="_blank" rel="noopener noreferrer" class="btn"><span>My CV</span></a>
                     </div>
                     <div class="section__column">
@@ -183,7 +183,7 @@
                             <h2 class="section-about__title"><span class="yellow">About</span> me</h2>
                             <p class="section-about__text">Hello, My name is Iryna Abrosimova and I'm a Junior Front-end Developer working and living in Krakow, Poland
                             </p>
-                            <p class="section-about__text">Feel free to take a look at my latest projects on the <span class="text-animation"><a href="#portfolio">web portfolio page</a></span>.</p>
+                            <p class="section-about__text">Feel free to take a look at my latest projects on the <span class="text-animation"><a href="javascript:document.querySelector('[name=portfolio]').scrollIntoView();">web portfolio page</a></span>.</p>
                             <button class="btn skills-btn"><span>My skills</span></button>
                             <button class="btn interests-btn"><span>My interests</span></button>
                         </div>
@@ -191,7 +191,7 @@
                 </div>
 
         </section>
-        <section class="section section-portfolio" data-section-name="portfolio" id="portfolio">
+        <section class="section section-portfolio" data-section-name="portfolio" name="portfolio">
             <div class="container">
                 <div class="section__wrapper">
                     <h2 class="section-portfolio__title">My developer <span class="yellow">portfolio</span></h2>
@@ -350,7 +350,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section-contact" data-section-name="contact" id="contact">
+        <section class="section section-contact" data-section-name="contact" name="contact">
             <div class="container">
                 <div class="section__wrapper">
                     <h2 class="section-contact__title">Contact <span class="yellow">me</span></h2>
@@ -365,8 +365,15 @@
                                 <a href="mailto:abrosimovairyna@gmail.com">abrosimovairyna@gmail.com</a>
                             </li>
                         </ul>
-                        <h4 class="social-contact__title yellow">Let's get social</h4>
+                        
+                        
+                    </div>
+                    <div class="section__column">
+                        <h4 class="social-contact__title">Let's get social</h4>
                         <ul class="section-contact__social social-contact">
+                            <li class="social-contact__item">
+                                <a href="https://linkedin.com/in/iryna-abrosimova-5933b4190" class="social-contact__link linkedin"  target="_blank" rel="noopener noreferrer"></a>
+                            </li>
                             <li class="social-contact__item">
                                 <a href="https://t.me/Delilah07" class="social-contact__link telegram"  target="_blank" rel="noopener noreferrer"></a>
                             </li>
@@ -377,10 +384,7 @@
                                 <a href="https://github.com/delilah07" class="social-contact__link github"  target="_blank" rel="noopener noreferrer"></a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="section__column">
-                        
-                        <form action="/action_page.php" class="section-contact__form form-contact">
+                        <form style="display: none;" action="#" class="section-contact__form form-contact">
                             <h4 class="form-contact__title">Send a message</h4>
                             <input type="text" id="name" name="name" placeholder="Your name" required>
                             <div class="section__row">
@@ -388,7 +392,7 @@
                                     <input type="text" name="email" id="email" value="" placeholder="Your email" required>
                                 </div>
                                 <div class="section__column">
-                                    <input type="tel" id="phone" name="phone" placeholder="Your phone" required>
+                                    <input type="tel" id="phone" name="phone" placeholder="Your phone">
                                 </div>
                             </div>
                             <label for="comment">Your message</label>
