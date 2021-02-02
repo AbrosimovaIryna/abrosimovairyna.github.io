@@ -1009,7 +1009,7 @@ p {
   flex: 0 0 30%;
   position: relative;
   margin: 20px;
-  max-height: 300px;
+  max-height: 200px;
   overflow: hidden;
 }
 
@@ -1245,6 +1245,10 @@ p {
 
 .social-contact__item + .social-contact__item {
   margin-left: 40px;
+}
+
+.social-contact__title {
+  margin-left: 0;
 }
 
 .social-contact__item:hover .social-contact__link.linkedin {
