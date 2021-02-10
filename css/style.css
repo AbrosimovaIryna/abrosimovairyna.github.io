@@ -811,7 +811,6 @@ p {
 }
 
 .section-intro__subtitle {
-  cursor: pointer;
   margin: 20px 0;
 }
 
@@ -1283,6 +1282,12 @@ p {
 
   100% {
     background-position: right;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-intro__subtitle {
+    cursor: pointer;
   }
 }
 
