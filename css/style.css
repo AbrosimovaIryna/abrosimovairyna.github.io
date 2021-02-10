@@ -1657,7 +1657,7 @@ p {
   }
 
   p {
-    font-size: .7rem;
+    font-size: .8rem;
     line-height: 1.1rem;
   }
 
@@ -1666,6 +1666,11 @@ p {
     width: 160px;
     height: 48px;
     border-radius: 8px;
+  }
+
+  .item-character__text {
+    font-size: .8rem;
+    line-height: 1.1rem;
   }
 }
 
